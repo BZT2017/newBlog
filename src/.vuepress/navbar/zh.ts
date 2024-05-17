@@ -12,7 +12,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "分享",
-        link: "/docs/share/mini-skateboards.md",
+        link: "/docs/life/share/mini-skateboards.md",
         icon: "streamline-emojis:four-leaf-clover"
       },
     ]
