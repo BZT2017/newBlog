@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://bzt2017.github.io/sitemap.xml
+Sitemap: https://bzt2017.github.io/newBlog/sitemap.xml
