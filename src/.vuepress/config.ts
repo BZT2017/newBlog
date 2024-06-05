@@ -16,6 +16,11 @@ export default defineUserConfig({
     //   description: "A blog",
     // },
   },
+  markdown:{
+    headers:{
+      level: [2, 3],
+    }
+  },
 
   theme,
 

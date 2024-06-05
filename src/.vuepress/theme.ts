@@ -137,6 +137,10 @@ export default hopeTheme({
 
     // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      
+      // install sandpack-vue3 before enabling it
+      sandpack: true,
+      kotlinPlayground: true,
       align: true,
       attrs: true,
       codetabs: true,
@@ -203,8 +207,6 @@ export default hopeTheme({
       // install @vue/repl before enabling it
       // vuePlayground: true,
 
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
     },
 
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA

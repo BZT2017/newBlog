@@ -5,8 +5,8 @@ export const zhSidebar = sidebar({
     {
       text: "时光机",
       children: [
-        "/docs/life/happyTime.md",
-        "/docs/life/emo.md",
+        "happyTime",
+        "emo",
       ]
     },
     {
@@ -22,7 +22,7 @@ export const zhSidebar = sidebar({
         "/docs/program/algorithm/base.md",
         "/docs/program/algorithm/api.md",
         "/docs/program/algorithm/problems.md",
-        "/docs/program/algorithm/hw.md",
+        "/docs/program/algorithm/hw-cd.md",
       ]
     },
     {
