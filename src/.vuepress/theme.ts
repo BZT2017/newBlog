@@ -4,7 +4,7 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://bzt2017.github.io",
-
+  darkmode: "auto",
   author: {
     name: "Tiger",
     url: "https://bzt2017.github.io/myBlog/",
@@ -122,7 +122,9 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
-
+    prismjs: {
+      theme: 'vs'
+    },
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.

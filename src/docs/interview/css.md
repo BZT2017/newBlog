@@ -19,6 +19,40 @@ BFC 即 Block Formatting Contexts (块级格式化上下文)，它属于上述�
 - display 为 inline-block、table-cells、flex
 - overflow 除了 visible 以外的值 (hidden、auto、scroll)
 
+## 垂直居中方案
+1. flex布局
+  ```css
+  justify-content: center;
+  align-items: center;
+  ```
+2. 绝对定位 + transform
+  ```css
+  .box{
+    position:relative
+  }
+  .children-box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+  }
+  ```
+3. grid布局
+  ```css
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    display: grid;
+  }
+  .children-box {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    margin: auto;
+  }
+  ```
+
 ## 构建 tab 页签效果
 
 ```html

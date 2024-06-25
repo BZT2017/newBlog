@@ -12,17 +12,17 @@ export const zhNavbar = navbar([
       },
       {
         text: "分享",
-        link: "/docs/life/share/mini-skateboards.md",
+        link: "/docs/share/mini-skateboards.md",
         icon: "streamline-emojis:four-leaf-clover"
       },
     ]
   },
   {
-    text: "编程",
+    text: "编程基础",
     icon: "solar:programming-bold",
     children: [
       {
-        text: "算法",
+        text: "常用算法",
         link: "/docs/program/algorithm/base.md",
         icon: "hugeicons:algorithm",
       },
@@ -59,40 +59,41 @@ export const zhNavbar = navbar([
     icon: "bi-signpost-2",
     children: [
       {
-        text: "js基础",
+        text: "JS基础",
         link: "/docs/interview/base/初级.md",
         icon: "vscode-icons:file-type-js-official",
       },
       {
-        text: "css",
+        text: "CSS",
         link: "/docs/interview/css.md",
         icon: "vscode-icons:file-type-css",
       },
       {
-        text: "vue2",
-        link: "/docs/interview/vue.md",
+        text: "Vue",
+        link: "/docs/interview/vue/vue.md",
         icon: "vscode-icons:file-type-vue",
       },
       {
-        text: "vue3",
-        link: "/docs/interview/vue3.md",
-        icon: "vscode-icons:file-type-vue",
-      },
-      {
-        text: "typescript",
+        text: "Typescript",
         link: "/docs/interview/typescript.md",
         icon: "devicon:typescript",
       },
       {
-        text: "webpack",
+        text: "Webpack",
         link: "/docs/interview/webpack.md",
         icon: "logos:webpack",
       },
       {
-        text: "微信小程序",
-        link: "/docs/interview/wxApp.md",
-        icon: "fa6-brands:weixin",
+        text: "移动端",
+        link: "/docs/interview/mobileTerminal/wxApp.md",
+        icon: "carbon:mobile",
       },
+      {
+        text: "服务端",
+        link: "/docs/interview/nodejs.md",
+        icon: "uil:server",
+      },
+      
     ]
   },
   {
@@ -114,6 +115,12 @@ export const zhNavbar = navbar([
         link: "https://oh-vue-icons.js.org/zh/",
         icon: ""
       },
+      {
+        text: "Iconify",
+        link: "https://icon-sets.iconify.design/",
+        icon: "simple-icons:iconify"
+      },
+      
     ]
   }
 ]);

@@ -8,10 +8,11 @@ export const zhSidebar = sidebar({
         "happyTime",
         "emo",
       ]
-    },
+    }
+  ],
+  "/docs/share/": [
     {
       text: "分享",
-      prefix: "share/",
       children: "structure",
     },
   ],
@@ -41,7 +42,7 @@ export const zhSidebar = sidebar({
       ]
     },
   ],
-  "/docs/interview/": [
+  "/docs/interview/base": [
     {
       text: "js基础",
       children: [
@@ -50,40 +51,59 @@ export const zhSidebar = sidebar({
         "/docs/interview/base/高级.md",
       ]
     },
+  ],
+  "/docs/interview/css": [
     {
       text: "CSS",
       children: [
         "/docs/interview/css.md",
       ]
     },
+  ],
+  "/docs/interview/vue": [
     {
       text: "vue2",
       children: [
-        "/docs/interview/vue.md",
+        "/docs/interview/vue/vue.md",
       ]
     },
     {
       text: "vue3",
       children: [
-        "/docs/interview/vue3.md",
+        "/docs/interview/vue/vue3.md",
       ]
     },
+  ],
+  "/docs/interview/webpack": [
     {
       text: "webpack",
       children: [
         "/docs/interview/webpack.md",
       ]
     },
+  ],
+  "/docs/interview/typescript": [
     {
       text: "typescript",
       children: [
         "/docs/interview/typescript.md",
       ]
     },
+  ],
+  "/docs/interview": [
     {
-      text: "微信小程序",
+      text: "服务端",
       children: [
-        "/docs/interview/wxApp.md",
+        "/docs/interview/nodejs.md",
+        "/docs/interview/express.md",
+      ]
+    },
+  ],
+  "/docs/interview/mobileTerminal": [
+    {
+      text: "移动端",
+      children: [
+        "/docs/interview/mobileTerminal/wxApp.md",
       ]
     },
   ],

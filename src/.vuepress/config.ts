@@ -1,9 +1,13 @@
 import { defineUserConfig } from "vuepress";
+import { prismjsPlugin } from '@vuepress/plugin-prismjs'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/newBlog/",
-
+  plugins:[
+    docsearchPlugin({}),
+  ],
   locales: {
     "/": {
       lang: "zh-CN",
@@ -17,13 +21,12 @@ export default defineUserConfig({
     // },
   },
   markdown:{
-    headers:{
-      level: [2, 3],
-    }
+    headers: {
+      // 用到哪一级就提取哪一级
+      level: [2, 3, 4, 5, 6],
+    },
   },
-
   theme,
-
   // Enable it with pwa
   // shouldPrefetch: false,
 });
