@@ -17,9 +17,10 @@ Vue 的双向数据绑定是由数据劫持结合发布者订阅者实现的。
 
   - 利用了事件监听 DOM 的机制，让视图去改变数据
 
+## vue 重写了那些数组方法
 
-## vue重写了那些数组方法
 LRWYGCFS4NC412952
+
 - 'push'：尾部插入
 - 'pop'：删除并返回最后一个元素
 - 'shift'：删除并返回头部元素
@@ -28,7 +29,7 @@ LRWYGCFS4NC412952
 - 'sort'：数组排序
 - 'reverse'：反转数组
 
-==使用这7种以外的数组方法更新数组，且需要视图也更新，则需要使用this.$set。==
+==使用这 7 种以外的数组方法更新数组，且需要视图也更新，则需要使用 this.$set。==
 
 ## vue 生命周期
 
@@ -55,15 +56,143 @@ LRWYGCFS4NC412952
 - history：利用了 HTML5 History Interface 中新增的 pushState() 和 replaceState() 方法
   - 这两个方法应用于浏览器的历史记录站，在当前已有的 back、forward、go 的基础之上，它们提供了对历史记录进行修改的功能。只是当它们执行修改时，虽然改变了当前的 URL，但浏览器不会立即向后端发送请求。
 
-### vue的data为什么是个函数
-JS中只有函数能构成作用域，所以用函数可以使每个实例的data作用域相互独立
+### vue 的 data 为什么是个函数
+
+JS 中只有函数能构成作用域，所以用函数可以使每个实例的 data 作用域相互独立
 
 ## v-for 中的 key 有什么作用
 
 ## vue 的自定义指令怎么渲染的
 
-
 ## 什么是单文件组件
-简单来说，就是将html，css，js写在同一个vue文件中的文件，被称为单文件组件
+
+简单来说，就是将 html，css，js 写在同一个 vue 文件中的文件，被称为单文件组件
 
 它可以被看做是一个组件，因此可以被其他组件引用，这就是模块化
+
+## vuex 状态管理
+
+1. State：存储数据
+
+```javascript
+this.$store.state.xxx;
+// 或者使用mapState辅助函数
+import { mapState } from 'vuex';
+export default {
+  // ...
+  computed: mapState({
+    // 箭头函数可使代码更简练
+    count: (state) => state.count,
+
+    // 传字符串参数 'count' 等同于 `state => state.count`
+    countAlias: 'count',
+
+    // 为了能够使用 `this` 获取局部状态，必须使用常规函数
+    countPlusLocalState(state) {
+      return state.count + this.localCount;
+    },
+  }),
+};
+```
+
+2. Getter：获取数据
+
+```javascript
+// 可以认为是 store 的计算属性
+export default {
+  computed: {
+    doneTodosCount() {
+      return this.$store.getters.doneTodosCount;
+    },
+    // 使用mapGetters辅助函数
+    ...mapGetters({
+      // 把 `this.doneCount` 映射为 `this.$store.getters.doneTodosCount`
+      doneCount: 'doneTodosCount',
+    }),
+  },
+};
+```
+
+3. Mutation：改变数据
+
+```js title="Store.js"
+const store = createStore({
+  state: {
+    count: 1,
+  },
+  mutations: {
+    increment(state) {
+      // 变更状态的处理
+      state.count++;
+    },
+  },
+});
+```
+
+```js title="Tmplate.js"
+import { mapMutations } from 'vuex';
+export default {
+  // ...
+  methods: {
+    ...mapMutations([
+      // 将 `this.increment()` 映射为 `this.$store.commit('increment')`
+      'increment',
+      // `mapMutations` 也支持载荷：
+      // 将 `this.incrementBy(amount)` 映射为 `this.$store.commit('incrementBy', amount)`
+      'incrementBy',
+    ]),
+    ...mapMutations({
+      // 将 `this.add()` 映射为 `this.$store.commit('increment')`
+      add: 'increment',
+    }),
+  },
+};
+```
+
+4. Action：异步更改数据
+
+```javascript title="Store.js"
+const store = createStore({
+  state: {
+    count: 0,
+  },
+  mutations: {
+    increment(state) {
+      state.count++;
+    },
+  },
+  actions: {
+    increment(context) {
+      context.commit('increment');
+    },
+  },
+});
+```
+
+```javascript title="Tmplate.js"
+import { mapActions } from 'vuex';
+export default {
+  // ...
+  methods: {
+    ...mapActions([
+      'increment', // 将 `this.increment()` 映射为 `this.$store.dispatch('increment')`
+
+      // `mapActions` 也支持载荷：
+      'incrementBy', // 将 `this.incrementBy(amount)` 映射为 `this.$store.dispatch('incrementBy', amount)`
+    ]),
+    ...mapActions({
+      add: 'increment', // 将 `this.add()` 映射为 `this.$store.dispatch('increment')`
+    }),
+  },
+};
+```
+
+5. Module：将数据模块化处理
+
+```javascript title="Store.js"
+this.$store.state.xxx;
+```
+
+```javascript title="Tmplate.js"
+this.$store.state.xxx;
+```
