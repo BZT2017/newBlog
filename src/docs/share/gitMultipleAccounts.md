@@ -57,8 +57,8 @@ date: 2022-07-19
 8. 在相应的项目中配置你的local环境账号名与e-mail
 
     ```bash
-    git config --local user.name "xxxx"
-    git config --local user.email "xxxx"
+    git config --local user.name "tiger-github"
+    git config --local user.email "634513456@qq.com"W
     ```
 
 :::tip
