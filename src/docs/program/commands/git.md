@@ -14,9 +14,12 @@ git cherry-pick <你的提交SHA码>
 开启vpn提交代码会报错，这时候需要配置代理
 
 ```sh
-# 配置全局代理
+# 配置全局代理(http)
 git config --global http.proxy 'http://127.0.0.1:<你的代理端口号>'
 git config --global https.proxy 'http://127.0.0.1:<你的代理端口号>'
+# 配置全局代理(socks)
+git config --global http.proxy 'socks5://127.0.0.1:<你的代理端口号>'
+git config --global https.proxy 'socks5://127.0.0.1:<你的代理端口号>'
 # 查看全局代理
 git config --global --get http.proxy
 git config --global --get https.proxy
