@@ -7,7 +7,7 @@ heroText: 记录，从新出发
 tagline: 欢迎来到我的博客
 heroFullScreen: true
 heroImageStyle: 'border-radius: 50%;'
-bgImage: https://cdn.jsdelivr.net/gh/BZT2017/oss-img/home-bg-1.jpg
+bgImage: /assets/images/home-bg-1.jpg
 # projects:
 #   - icon: project
 #     name: project name

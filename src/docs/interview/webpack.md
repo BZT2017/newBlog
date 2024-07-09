@@ -2,7 +2,7 @@
 title: webpack
 date: 2022-07-06
 ---
-![wepback简易流程图](https://cdn.jsdelivr.net/gh/BZT2017/oss-img/202207071835850.png)
+![wepback简易流程图](/assets/images/202207071835850.png)
 
 ## 为什么要使用webpack
 上古时代，通过script标签引入的方法会导致以下几个问题
@@ -864,7 +864,7 @@ module.exports = {
 }
 ```
 此属性值表示浏览器对其传输进行了压缩处理：
-![compress效果](https://cdn.jsdelivr.net/gh/BZT2017/oss-img/202207111339173.png
+![compress效果](/assets/images/202207111339173.png
 
 ### 模块热替换与热加载（HMR）
 

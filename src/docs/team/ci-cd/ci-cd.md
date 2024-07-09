@@ -11,7 +11,7 @@ CI/CD的中文意思是**CI（持续集成）/CD（持续交付或持续部署�
 
 详细流程如下：
 
-![DevOps流程](https://cdn.jsdelivr.net/gh/BZT2017/oss-img/202207061522373.png)
+![DevOps流程](/assets/images/202207061522373.png)
 
 
 - **CI** 始终指持续集成，它属于开发人员的自动化流程。
