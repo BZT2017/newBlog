@@ -1,5 +1,6 @@
 ---
 title: CI/CD & DevOps
+cover: /assets/images/cover3.jpg
 date: 2022-07-06
 ---
 

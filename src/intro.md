@@ -1,6 +1,7 @@
 ---
 icon: circle-info
-cover: /images/cover3.jpg
+cover: /assets/images/cover3.jpg
 ---
 
 # Intro Page
+不积跬步，无以至千里；不积小流无以成江海。
