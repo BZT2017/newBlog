@@ -13,9 +13,9 @@ export default hopeTheme({
   
   iconAssets: "iconify",
 
-  favicon:"https://cdn.jsdelivr.net/gh/BZT2017/oss-img/head-icon.png",
+  favicon:"/assets/icon/head-icon.png",
 
-  logo: "https://cdn.jsdelivr.net/gh/BZT2017/oss-img/avatar.jpg",
+  logo: "/assets/icon/avatar.jpg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 

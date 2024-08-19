@@ -120,6 +120,12 @@ export const zhNavbar = navbar([
         link: "https://icon-sets.iconify.design/",
         icon: "simple-icons:iconify"
       },
+      {
+        text: "在线图片压缩",
+        link: "https://tinypng.com/",
+        icon: "noto:panda"
+      },
+      
       
     ]
   }
