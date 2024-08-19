@@ -44,7 +44,7 @@ export const zhSidebar = sidebar({
   ],
   "/docs/interview/base": [
     {
-      text: "js基础",
+      text: "JavaScript",
       children: [
         "/docs/interview/base/初级.md",
         "/docs/interview/base/中级.md",
@@ -62,14 +62,9 @@ export const zhSidebar = sidebar({
   ],
   "/docs/interview/vue": [
     {
-      text: "vue2",
+      text: "VUE",
       children: [
         "/docs/interview/vue/vue.md",
-      ]
-    },
-    {
-      text: "vue3",
-      children: [
         "/docs/interview/vue/vue3.md",
       ]
     },
@@ -84,7 +79,7 @@ export const zhSidebar = sidebar({
   ],
   "/docs/interview/typescript": [
     {
-      text: "typescript",
+      text: "TypeScript",
       children: [
         "/docs/interview/typescript.md",
       ]

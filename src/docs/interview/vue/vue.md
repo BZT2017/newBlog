@@ -1,5 +1,5 @@
 ---
-title: vue2面试点
+title: vue2
 date: 2022-06-21
 ---
 
