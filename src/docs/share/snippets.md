@@ -8,8 +8,11 @@ date: 2022-07-21
 ## vscode 代码片段
 
 文件 -> 首选项 -> 配置用户代码片段
+
 1. <预设变量: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables>
+
 ### vue
+
 ```json
 // vue.json文件
 {
@@ -45,20 +48,35 @@ date: 2022-07-21
   }
 }
 ```
+
 ### markdown
-```json
+
+````json
 {
+  "Print to console": {
+    "prefix": "jstext",
+    "body": ["```javascript", "$1", "```"],
+    "description": "Log output to console"
+  },
   "title": {
-		"prefix": "title",
-		"body": [
-			"---",
-			"title: $1",
-			"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
-			"---"
-		],
-	},
+    "prefix": "title",
+    "body": [
+      "---",
+      "title: $1",
+      "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "---",
+      ""
+    ],
+    "description": "Log output to console"
+  },
+  "font": {
+    "prefix": "font",
+    "body": ["<font color=$1>$2</font>"],
+    "description": "Log output to console"
+  }
 }
-```
+````
+
 ## css 代码片段
 
 - 文字超出可视区域显示省略号

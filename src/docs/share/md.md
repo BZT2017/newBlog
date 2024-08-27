@@ -3,15 +3,20 @@ title: markdown
 date: 2023-05-19
 ---
 
-## 设置vscode的markdown代码片段支持
-打开vscode的设置，添加以下代码
+## 设置 vscode 的 markdown 代码片段支持
+
+打开 vscode 的设置，添加以下代码
+
 ```json
 "[markdown]":{
  "editor.quickSuggestions": true
 }
 ```
 
+## [常用代码片段-点我跳转](/docs/share/snippets.md#markdown)
+
 ## 语法
+
 \*：斜体
 
 \*\*：加粗
@@ -39,3 +44,5 @@ date: 2023-05-19
 \[xxx]: url：改名超链接
 
 < font color=xxx >text< / font >：改字体颜色
+
+```

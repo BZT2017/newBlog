@@ -44,12 +44,12 @@ export const zhNavbar = navbar([
     children: [
       {
         text: "编码规范",
-        link: "/docs/team/codingStandard.md",  
+        link: "/docs/team/codingStandard.md",
         icon: "game-icons:corset",
       },
       {
         text: "持续集成与持续部署",
-        link: "/docs/team/ci-cd/ci-cd.md",  
+        link: "/docs/team/ci-cd/ci-cd.md",
         icon: "line-md:my-location-loop",
       },
     ]
@@ -59,7 +59,7 @@ export const zhNavbar = navbar([
     icon: "bi-signpost-2",
     children: [
       {
-        text: "JS基础",
+        text: "JavaScript",
         link: "/docs/interview/base/初级.md",
         icon: "vscode-icons:file-type-js-official",
       },
@@ -74,7 +74,7 @@ export const zhNavbar = navbar([
         icon: "vscode-icons:file-type-vue",
       },
       {
-        text: "Typescript",
+        text: "TypeScript",
         link: "/docs/interview/typescript.md",
         icon: "devicon:typescript",
       },
@@ -93,7 +93,7 @@ export const zhNavbar = navbar([
         link: "/docs/interview/nodejs.md",
         icon: "uil:server",
       },
-      
+
     ]
   },
   {
@@ -125,8 +125,8 @@ export const zhNavbar = navbar([
         link: "https://tinypng.com/",
         icon: "noto:panda"
       },
-      
-      
+
+
     ]
   }
 ]);
